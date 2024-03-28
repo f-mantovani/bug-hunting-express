@@ -164,9 +164,9 @@ with (debt is optional):
 
 ```json
 {
-    "name": string,
-    "occupation": string,
-    "weapon": string,
+	"name": string,
+	"occupation": string,
+	"weapon": string,
 	"debt": boolean
 }
 ```
