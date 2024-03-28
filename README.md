@@ -210,3 +210,9 @@ axios.put(`https://ih-crud-api.herokuapp.com/characters/${req.params.id}`, updat
 -   [ ] If you need to change the API call, it would be a pain to change in all the places, you could use a `variable` in this case, but if you need that info across different files / folders we can have a little bit of repetition so try to create a `environment variable` that will hold the `BASE_URL`.
 
 -   [ ] Change all the calls of axios to a service, so if you need to change to another library you could change in a single place :D
+
+HINT for the service:
+
+-   [Axios doc to create a instance](https://axios-http.com/docs/instance)
+-   [Log Rocket Example](https://blog.logrocket.com/understanding-axios-create/)
+-   You can check your student's portal to check the Organizing HTTP Requests
