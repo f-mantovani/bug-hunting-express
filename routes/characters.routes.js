@@ -1,5 +1,5 @@
 const { Router } = require('express');
-import axios from 'axios';
+import axios from 'axios'
 
 const router = Router();
 
@@ -7,7 +7,7 @@ router.get('/', (req, res, next) => {
     axios
         .get('https://ih-crud-api.herokuapp.com/characters/')
         .then((response) => {
-           
+          
         })
         .catch((err) => {
             console.log('Error getting character', err);
@@ -55,7 +55,7 @@ router.get('/:id/edit', (req, res, next) => {
     axios
         .get(`https://ih-crud-api.herokuapp.com/characters/${req.params.id}`, updatedCharacter)
         .then((response) => {
-            res.redirect('/characters');
+			res.json(response.data);
         })
         .catch((err) => {
             console.log('Error getting character', err.data);

@@ -43,7 +43,7 @@ on the `package.json` change the dev script to (You'll need to stop the script a
 "All good in here"
 ```
 
-Hint: Check your terminal later
+Hint: Check your terminal, the error was artificially created, check the `server.js`
 
 <details> 
   <summary> Spoiler: Solution </summary>
@@ -171,7 +171,9 @@ with (debt is optional):
 }
 ```
 
-Try to edit the character using Postman making a PUT request to `http://localhost:5005/characters/id/edit`
+Try to edit the character using Postman making a PUT request to
+The id being used in the URL should be of the character just created :)
+`http://localhost:5005/characters/id/edit`
 
 `Hint: Check the method being used`
 
@@ -184,21 +186,6 @@ on the `characters.routes.js` on the route that updates a character change the m
 router.put('/:id/edit', (req, res, next) => {...})
 
 axios.put(`https://ih-crud-api.herokuapp.com/characters/${req.params.id}`, updatedCharacter);
-```
-
-</details>
-
----
-
--   [ ] After you fix the route, you still aren't getting the updated information from the request.
-
-<details> 
-  <summary> Spoiler: Solution </summary>
-
-on the `characters.routes.js` on the route that updates a character change the response:
-
-```javascript
-res.json(response.data);
 ```
 
 </details>
