@@ -2,9 +2,15 @@
 
 In this exercise you need to find all the bugs and make sure you can list all characters, create a new character, update a character and delete one of them.
 
-We'll be using the same API as the class example with [https://ih-crud-api.herokuapp.com/characters/](https://ih-crud-api.herokuapp.com/characters/)
+We'll be using the same API as the class example with [https://ih-crud-api.herokuapp.com](https://ih-crud-api.herokuapp.com)
 
-If you need to refresh the methods and paths checkout the student portal :)
+| Route             | HTTP Verb | Description                     |
+| ----------------- | --------- | ------------------------------- |
+| `/characters`     | GET       | List of all characters          |
+| `/characters/:id` | GET       | Details of a specific character |
+| `/characters`     | POST      | Create a new character          |
+| `/characters/:id` | PUT/PATCH | Update a specific character     |
+| `/characters/:id` | DELETE    | Delete a specific character     |
 
 ### Bugs, bugs and more bugs
 
